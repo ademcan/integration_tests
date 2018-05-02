@@ -71,8 +71,8 @@ function toBuffer(ab) {
 // Connecting to the API
 // TODO: The IP should change to something running locally for tests_old
 // let qrlClient = getQRLClient('104.251.219.215:9009');
+// let qrlClient = getQRLClient('35.177.60.137:9009');
 let qrlClient = getQRLClient('127.0.0.1:10002');
-// let qrlClient = getQRLClient('127.0.0.1:9009');
 
 
 // Concatenates multiple typed arrays into one.
@@ -115,7 +115,9 @@ toBigendianUint64BytesUnsigned = (input) => {
 
 
 // initiating the test wallets to use
-var testfromaddress = '0105006d232eb403a0248f9d4c0476c06a7d7a1d0425420df2dd915b7fb46cf7da132699c27b93'
+
+var testfromaddress = '010500327b3cd777e1ecab93df873ea335de3413283ff2ba4a7ff577ef979eb99a54e06590f466'
+// var testfromaddress = '0105006d232eb403a0248f9d4c0476c06a7d7a1d0425420df2dd915b7fb46cf7da132699c27b93'
 var testfromxmsspk = '0105007e41c011a706c8edd8d1a2f18d558d14311917cd549b3edae07775b12d6640ef35ea0d4dd47fc36e2bc6d5aa5f6ef7582fcf6b8a564ea0ff3af3b42af05cbac9'
 var testtoaddress = '0105003e32fcbcdcaf09485272f1aa1c1e318daaa8cf7cd03bacf7cfceeddf936bb88efe1e4d21'
 var testfromaddress_bytes = stringToBytes(testfromaddress);

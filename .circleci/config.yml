@@ -87,7 +87,7 @@ jobs:
       - run:
           command: ./mocknet/MockNet.py
           background: true
-      - run: sleep 15; cd tests/js && npm install && npm rebuild && npm test
+      - run: sleep 120; cd tests/js && npm install && npm rebuild && npm test
 
   tests_wallet:
     # Run qrl-wallet tests
